@@ -37,14 +37,14 @@
       };
 
       mediaRecorder.onstop = async () => {
-        const audioBlob = new Blob(audioChunks, { type: 'audio/webm' });
+        const audioBlob = new Blob(audioChunks, { type: 'audio/ogg' });
         const audioUrl = URL.createObjectURL(audioBlob);
         audioPlayer.src = audioUrl;
         audioPlayer.style.display = "block";
 
         // Upload para backend
         const formData = new FormData();
-        formData.append("audio", audioBlob, "gravacao.webm");
+        formData.append("audio", audioBlob, "gravacao.ogg");
 
         try {
           const res = await fetch("http://localhost:3000/upload", {
