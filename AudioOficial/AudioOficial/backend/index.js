@@ -9,8 +9,8 @@ const app = express();
 const PORT = 3000;
 
 // ================= CONFIG =================
-const APP_ID = "689cd7af28bcd5b717ade3ba"; // ID do Sunshine App
-const API_KEY = "app_689e3a3ee27c0c037744a78a"; // Chave criada no Zendesk
+const APP_ID = "COLOQUE_SEU_APP_ID_AQUI"; // ID do Sunshine App
+const API_KEY = "COLOQUE_SUA_API_KEY_AQUI"; // Chave criada no Zendesk
 const INTEGRATION_ID = "COLOQUE_SEU_INTEGRATION_ID_AQUI"; // ID da integração WhatsApp
 // ===========================================
 
